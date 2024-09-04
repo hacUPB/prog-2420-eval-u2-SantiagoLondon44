@@ -1,3 +1,4 @@
+
 def simular_desintegracion_orbital():
     # Pedir datos de entrada al usuario
     altitud_inicial = float(input("agrega la altitud inicial del satélite (en kilómetros): "))

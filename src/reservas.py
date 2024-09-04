@@ -1,5 +1,5 @@
 
-
+import os
 import random
 
 def main():
@@ -73,7 +73,7 @@ def main():
         
     numero_asiento = random.randint(1, 29)
     asiento_asignado = f"{numero_asiento}{asiento}"
-    
+    import os
     # Salida
     print(f"\n--- Resumen de la Reserva ---")
     print(f"Nombre: {nombre_completo}")
