@@ -1,5 +1,5 @@
 
-def simular_desintegracion_orbital():
+def main():
     # Pedir datos de entrada al usuario
     altitud_inicial = float(input("agrega la altitud inicial del satélite (en kilómetros): "))
     coeficiente_arrastre = float(input("agrega el coeficiente de arrastre inicial (por ejemplo, 0.01): "))
@@ -35,5 +35,5 @@ def simular_desintegracion_orbital():
 # Ejecutar la simulación
 if __name__ == "__main__":
     
-    simular_desintegracion_orbital()
+    main()
 
