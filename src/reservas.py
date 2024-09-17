@@ -91,7 +91,7 @@ print(dias_validos_semana)
     print(f"Nombre: {nombre_completo}")
     print(f"Origen: {ciudad_origen}")
     print(f"Destino: {ciudad_destino}")
-    print(f"Fecha de vuelo: {dia_semana} {dia_mes}")
+    print(f"Fecha de vuelo: {fecha_sis.day} / {fecha_sis.month} / {fecha_sis.year}
     print(f"Precio del boleto: ${precio}")
     print(f"Asiento asignado: {asiento_asignado}")
 
