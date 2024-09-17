@@ -1,6 +1,7 @@
 
 import os
 import random
+import datetime
 
 def main():
     # Información del usuario
@@ -43,9 +44,20 @@ def main():
         ciudad_destino = "Santa Marta"
     
     # Preguntamos el día y fecha del vuelo
-    dia_semana = input("Ingrese el día de la semana en el que desea viajar: ").lower()
-    dia_mes = int(input("Ingrese el día del mes en que desea viajar (1-30): "))
-    
+dias_validos_semana = ["lunes","martes","miercoles","jueves","viernes","sabado","domingo"]
+
+hoy = datetime.datetime.now()
+print(hoy)
+fecha = input("Ingrese la fecha en la cual desea viajar con formato dd/mm/aaaa:")
+fecha_sis = datetime.datetime.strptime(fecha, "%d,%m,%Y")
+print(fecha_sis)
+
+dia = fecha_sis.weekday()
+
+print(dia)
+
+print(dias_validos_semana)
+
     # Calcular la distancia
     distancia = distancias.get((origen, destino)) if origen < destino else distancias.get((destino, origen))
     
